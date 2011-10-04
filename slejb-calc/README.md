@@ -1,33 +1,32 @@
-= Calculator EJB3 HA =
+# Calculator EJB3 HA 
 
-== Init ==
+### Init
 
 Configure the build.properties
 
-== Compile sample ==
+## Compile sample
 
 > ant compile
 
-== Create cluster node ==
+## Create cluster node 
 
 > ant cluster
 
-== Test sample ==
+## Test sample 
 
-=== Node 1 ===
+### Node 1 
 
 First terminal 
 
 > ant start_node1
 
-=== Node 2 ===
+### Node 2 
 
 Second terminal 
 
 > ant start_node2
 
-
-=== Run ===
+### Run 
 
 Third terminal 
 
