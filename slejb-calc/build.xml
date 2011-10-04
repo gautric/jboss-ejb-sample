@@ -86,7 +86,19 @@
       <delete dir="${build.dir}"/>
       <delete file="${jboss.home}/server/${jboss.server.config}/deploy/${build.artifact}"/>
    </target>
-
-
+   <target name="start_node1">
+	<exec executable="${jboss.home}/bin/run.sh">
+		<arg value="-c"/>
+		<arg value="${jboss.server.config}"/>
+	</exec>
+    </target>
+    <target name="start_node2">
+	<exec executable="${jboss.home}/bin/run.sh">
+		<arg value="-c"/>
+		<arg value="${jboss.server.config}2"/>
+		<arg value="-Djboss.service.binding.set=ports-01"/>
+		<arg value="-Djboss.messaging.ServerPeerID=1"/>
+	</exec>
+    </target>
 </project>
 
