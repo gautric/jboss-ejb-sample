@@ -37,6 +37,7 @@ public class Client
 
       System.out.println("1 + 1 = " + calculator.add(1, 1));
 
+      System.out.println("!!! You can also kill the selected Jboss instance !!!");
       sleep(10);
 
       System.out.println("1 - 1 = " + calculator.subtract(1, 1));
