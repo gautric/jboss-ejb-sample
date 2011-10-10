@@ -2,7 +2,7 @@
 
 ### Init
 
-Configure the build.properties
+Configure the build.properties file
 
 ## Compile sample
 
